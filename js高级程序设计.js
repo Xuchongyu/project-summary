@@ -91,7 +91,7 @@
 //   return x > y ? x : y
 // }, 0)
 // console.log(maxValue)
-const setData = new Set([1, 2, 3, 4, 5, 5])
+// const setData = new Set([1, 2, 3, 4, 5, 5])
 // setData.forEach((item) => {
 //   console.log(item)
 // })
@@ -136,86 +136,121 @@ const setData = new Set([1, 2, 3, 4, 5, 5])
 // delete p2.name
 // console.log(p1.name, p2.name)
 // 给后端返回的数据排序
-const array = [
-    {
-        key: 'esms',
-        href: '/esms',
-        name: 'ES管理平台',
-    },
-    {
-        key: 'index',
-        href: '/index.html',
-        name: '数据开发',
-    },
-    {
-        key: 'metis',
-        href: '/metis.html',
-        name: '实时开发',
-    },
-    {
-        key: 'dsManager',
-        href: '/dsManager.html',
-        name: '数据服务',
-    },
-    {
-        key: 'dataSync',
-        href: '/dataSync.html',
-        name: '数据同步',
-    },
-    {
-        key: 'dqc',
-        href: '/dqc.html',
-        name: '数据质量',
-    },
-    {
-        key: 'map',
-        href: '/map.html',
-        name: '数据地图',
-    },
-    {
-        key: 'assets',
-        href: '/assets.html',
-        name: '数据资产',
-    },
-    {
-        key: 'jobops',
-        href: '/jobops.html',
-        name: '任务运维',
-    },
-    {
-        key: 'access',
-        name: '权限管理',
-        children: [
-            {
-                key: 'auth',
-                href: '/auth.html',
-                name: '数据权限',
-            },
-            {
-                key: 'mastiff',
-                href: '/mastiff.html',
-                name: '功能权限',
-            },
-        ],
-    },
-    {
-        key: 'measure',
-        href: '/measure.html',
-        name: '指标中心',
-    },
-    {
-        key: 'adminManager',
-        href: '/adminManager.html',
-        name: '高级管理',
-    },
+// const array = [
+//     {
+//         key: 'esms',
+//         href: '/esms',
+//         name: 'ES管理平台',
+//     },
+//     {
+//         key: 'index',
+//         href: '/index.html',
+//         name: '数据开发',
+//     },
+//     {
+//         key: 'metis',
+//         href: '/metis.html',
+//         name: '实时开发',
+//     },
+//     {
+//         key: 'dsManager',
+//         href: '/dsManager.html',
+//         name: '数据服务',
+//     },
+//     {
+//         key: 'dataSync',
+//         href: '/dataSync.html',
+//         name: '数据同步',
+//     },
+//     {
+//         key: 'dqc',
+//         href: '/dqc.html',
+//         name: '数据质量',
+//     },
+//     {
+//         key: 'map',
+//         href: '/map.html',
+//         name: '数据地图',
+//     },
+//     {
+//         key: 'assets',
+//         href: '/assets.html',
+//         name: '数据资产',
+//     },
+//     {
+//         key: 'jobops',
+//         href: '/jobops.html',
+//         name: '任务运维',
+//     },
+//     {
+//         key: 'access',
+//         name: '权限管理',
+//         children: [
+//             {
+//                 key: 'auth',
+//                 href: '/auth.html',
+//                 name: '数据权限',
+//             },
+//             {
+//                 key: 'mastiff',
+//                 href: '/mastiff.html',
+//                 name: '功能权限',
+//             },
+//         ],
+//     },
+//     {
+//         key: 'measure',
+//         href: '/measure.html',
+//         name: '指标中心',
+//     },
+//     {
+//         key: 'adminManager',
+//         href: '/adminManager.html',
+//         name: '高级管理',
+//     },
 
-    {
-        key: 'billing-web',
-        href: '/bigdata/billing-web',
-        name: '计费系统',
-    },
-]
-const sortArray = array.sort((a, b) => {
-    return a.name.length - b.name.length
-})
-console.log(sortArray)
+//     {
+//         key: 'billing-web',
+//         href: '/bigdata/billing-web',
+//         name: '计费系统',
+//     },
+// ]
+// const sortArray = array.sort((a, b) => {
+//     return a.name.length - b.name.length
+// })
+// console.log(sortArray)
+// const getHuskyHeader = function () {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(function () {
+//             resolve()
+//         }, 2000)
+//     })
+// }
+// getHuskyHeader().then((res) => {
+//     console.log('哈哈哈')
+// })
+// function createFunctions() {
+//     var result = new Array()
+//     for (var i = 0; i < 10, i++; ) {
+//         console.log(i)
+//         result[i] = function () {
+//             return i
+//         }
+//     }
+//     // console.log(result)
+//     return result
+// }
+// console.log(createFunctions())
+// const name = 'the window'
+// const object = {
+//     name: 'the object',
+//     getName: () => {
+//         // console.log(this)
+//         return function () {
+//             return this.name
+//         }
+//     },
+// }
+// console.log(object.getName()())
+// const obj = {}
+// console.log(!!obj)
