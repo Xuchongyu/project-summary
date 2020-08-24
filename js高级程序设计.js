@@ -254,3 +254,59 @@
 // console.log(object.getName()())
 // const obj = {}
 // console.log(!!obj)
+/**
+ * 递归函数 自定调用自己 的另外一种方式 arguments.callee
+ */
+// let num = 0
+// function conso() {
+//     if (num > 11301) {
+//         console.log('哈哈哈 大于5000了')
+//         // retur
+//     } else {
+//         num++
+//         console.log(num)
+//         arguments.callee()
+//     }
+// }
+// conso()
+// const errlog =
+//     'debugId = 30701,MARS# 2020-07-27 10:41:13 进入任务队列\nMARS# 2020-07-27 10:41:15 mars机器上任务开始运行, 进行SUCCESS文件检测\nMARS# 2020-07-27 10:41:17 开始运行\nMARS# 2020-07-27 10:41:18 开始执行前置处理单元：DownloadJob\nMARS# 2020-07-27 10:41:18 前置处理单元：DownloadJob 处理完毕\nMARS# 2020-07-27 10:41:18 开始执行核心Job任务\nMARS# 2020-07-27 10:41:18 开始执行脚本 alter table'
+// const replaceStr = errlog.replace(/\n/g, '<br/>')
+// console.log(replaceStr)
+// function throttle(func, gapTime) {
+//     if (typeof func !== 'function') {
+//         throw new TypeError('need a function')
+//     }
+//     gapTime = +gapTime || 0
+//     let lastTime = 0
+
+//     return function () {
+//         let time = +new Date()
+//         if (time - lastTime > gapTime || !lastTime) {
+//             func()
+//             lastTime = time
+//         }
+//     }
+// }
+
+// setInterval(
+//     throttle(() => {
+//         console.log('xxx')
+//     }, 1000),
+//     10
+// )
+// const reg = /^[\u4e00-\u9fa5\.\a-zA-Z0-9]+$/
+// console.log(reg.test('123.abd'))
+// var a = 10,
+//     b = 20
+// a ^= b
+// b ^= a
+// a ^= b
+// 等价于 [a,b] = [b,a]
+// ;[a, b] = [b, a]
+// console.log()
+// console.log(a, b)
+// import sqlFormatter from './src/sqlFormatter'
+// console.log(sqlFormatter)
+console.log(a)
+var a = 1
