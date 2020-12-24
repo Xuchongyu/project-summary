@@ -103,18 +103,53 @@
     <div class="box sidebar">Sidebar</div>
     <div class="box content">Content</div>
   </div>
-  <!-- <script>
-    eval("console.log(this)")
-    // const getTheStyle = function () {
-    //   const elem = document.getElementById("elem-container");
-    //   const theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("position");
-    //   document.getElementById("output").innerHTML = theCSSprop;
-    // }
-    // getTheStyle();
-    const elem = document.getElementById("elem-container");
-    const theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("position");
-    document.getElementById("output").innerHTML = theCSSprop;
-  </script> -->
+  <div id="inner">
+
+  </div>
+
+  <script>
+    const fieldInfo = [
+      {
+        "Name": "age",
+        "Type": "int"
+      },
+      {
+        "Name": "name",
+        "Type": "string"
+      }
+    ]
+    // const innerDiv = document.createElement("div")
+    // fieldInfo.forEach(element => {
+    //   const div = document.createElement("div")
+    //   div.style.display = "flex"
+    //   div.style.marginTop = "10px"
+    //   const nameLabelDiv = document.createElement("div")
+    //   nameLabelDiv.innerHTML = "字段名："
+    //   nameLabelDiv.style.width = "100px"
+
+    //   const nameValueDiv = document.createElement("div")
+    //   nameValueDiv.innerHTML = element.Name
+    //   nameValueDiv.style.width = "100px"
+
+    //   const typeLabelDiv = document.createElement("div")
+    //   typeLabelDiv.innerHTML = "类型："
+    //   typeLabelDiv.style.width = "100px"
+
+    //   const typeValueDiv = document.createElement("div")
+    //   typeValueDiv.innerHTML = element.Type
+    //   typeValueDiv.style.width = "100px"
+
+    //   div.appendChild(nameLabelDiv)
+    //   div.appendChild(nameValueDiv)
+    //   div.appendChild(typeLabelDiv)
+    //   div.appendChild(typeValueDiv)
+    //   innerDiv.appendChild(div)
+    // });
+      let innerDiv = ""
+      fieldInfo.forEach(element => {
+        innerDiv += "<div style='display:flex;marginTop:10px;width:100px;'>字段名：</div>"
+      })
+  </script>
 </body>
 
 </html>

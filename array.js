@@ -56,11 +56,33 @@ const array = [1, 2, 3, 4, 5]
 // })
 // const maxValue = Math.max.apply(null, array)
 // console.log(maxValue)
-const returnFucntion = () => {
-  // if (false) return true
+// const returnFucntion = () => {
+//   // if (false) return true
+// }
+// function handle() {
+//   // returnFucntion()
+//   console.log(123)
+// }
+// handle()
+// const usrPermission = ['1', '2', '3']
+// const selfpermission = ['2', '4']
+// console.log(
+//     selfpermission.some((permission) => usrPermission.includes(permission))
+// )
+// console.log(Array.isArray(selfpermission))
+function add() {
+    const _args = [...arguments]
+    console.log('第一层args', _args)
+    function fn() {
+        _args.push(...arguments)
+        console.log('第二层args', _args)
+        return fn
+    }
+    fn.toString = function () {
+        return _args.reduce((sum, cur) => sum + cur)
+    }
+    console.log(fn)
+    return fn
 }
-function handle() {
-  // returnFucntion()
-  console.log(123)
-}
-handle()
+const result = add(1)(1, 2, 3)(2)
+console.log(result())

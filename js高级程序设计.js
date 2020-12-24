@@ -308,5 +308,60 @@
 // console.log(a, b)
 // import sqlFormatter from './src/sqlFormatter'
 // console.log(sqlFormatter)
-console.log(a)
-var a = 1
+// async function handleClick() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve()
+//         }, 3000)
+//     })
+//     // return setTimeout(() => {
+//     //     console.log('setTimeOut')
+//     //     return Promise.resolve()
+//     // }, 3000)
+// }
+// async function mounted() {
+//     await handleClick().then(() => {
+//         console.log(123)
+//     })
+// }
+// mounted()
+// const array = [1, 2, 3, 4, 5]
+
+// const arrayResult = array.reduce((acc, cur, index, _array) => {
+//     console.log('acc', acc, 'cur', cur, 'index', index)
+//     return acc > cur ? acc : cur
+// })
+// console.log('arrayResult', arrayResult)
+let colors = [
+    {
+        id: 0,
+        colorName: 'red',
+    },
+    {
+        id: 1,
+        colorName: 'orange',
+    },
+    {
+        id: 2,
+        colorName: 'yellow',
+    },
+    {
+        id: 3,
+        colorName: 'green',
+    },
+    {
+        id: 1,
+        colorName: 'blue',
+    },
+    {
+        id: 2,
+        colorName: 'purple',
+    },
+]
+let obj = {}
+colors = colors.reduce((cur, next) => {
+    console.log(cur)
+    obj[next.id] ? false : (obj[next.id] = true && cur.push(next))
+    return cur
+}, []) //设置cur默认类型为数组，并且初始值为空的数组
+console.log(colors)
